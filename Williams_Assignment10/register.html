@@ -1,0 +1,43 @@
+<!Doctype html>
+<html ng-app>
+<head>
+<title>Williams_Mile High Hotel</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/hotel.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/jquery-1.11.0.js"></script> 
+<script src="js/register.js"></script>   
+</head>
+<nav>
+<div class="sidenav">
+<a href="index.html">Home</a> 
+<a href="info.html">Info</a> 
+<a href="receipt.html">Receipt</a>
+<a href="amenities.html">Amenities</a>
+<a href="discount.html">Discount</a>
+<a href="estimate.html">Estimate</a>
+<a href="register.html">Register</a>
+<a href="map.html">Map</a></li>
+<a href="special_features.html">Features</a>
+<a href="feature_pricing.html">Pricing</a>
+<a href="contactus.php">Contact</a>
+<a href="contactus2.php">Contact Us Again</a>
+</div>
+<br>
+<div class ="main">
+<h1>Mile High Hotel</h1>
+ 
+  <body>
+  <center>
+    <header><h1>Lab 4</h1></header>
+<table ng-controller="theregister" border>
+<tr><th>Name</th><th>Address</th><th>Nights</th><th>Room Rate</th></tr>
+<tr ng-repeat="session in myregister">
+<td>{{ session.namecode }}</td>
+<td>{{ session.addresscode }}</td>
+<td>{{ session.nightcode}}</td>
+<td>{{ session.roomcode }}</td>
+</tr>
+</table>
+</div>
+</html>
